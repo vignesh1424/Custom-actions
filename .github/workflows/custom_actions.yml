@@ -1,0 +1,22 @@
+name: Custom Actions Example
+
+on:
+  push:
+    branches: [ master ]
+  workflow_call:
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Hello world action step
+        uses: vignesh1424/Custom-actions@master
+        id: hello
+        with:
+          who-to-greet: 'Vignesh'
+
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
