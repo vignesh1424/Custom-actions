@@ -13,7 +13,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Hello world action step
         uses: vignesh1424/Custom-actions@master
-        id: hello
         with:
           who-to-greet: 'Vignesh'
           aws-region: ${{secrets.AWS_REGION}}
