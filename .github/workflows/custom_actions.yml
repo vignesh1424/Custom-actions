@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
+      - name: custom action
         uses: vignesh1424/Custom-actions@master
         with:
           who-to-greet: 'Vignesh'
