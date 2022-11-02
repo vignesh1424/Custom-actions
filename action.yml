@@ -1,13 +1,16 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  aws-region:  # id of input
+    description: 'region'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  aws-access-key-id:  # id of input
+    description: 'access-key'
+    required: true
+  aws-secret-access-key:  # id of input
+    description: 'secret access key'
+    required: true
+
 runs:
   using: 'node16'
   main: 'index.js'

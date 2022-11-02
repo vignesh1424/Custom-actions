@@ -2,10 +2,13 @@ import { getInput, setOutput, setFailed } from '@actions/core';
 
 try {
   // `who-to-greet` input defined in action metadata file
-  const nameToGreet = getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  const time = (new Date()).toTimeString();
-  setOutput("time", time);
-} catch (error) {
+  const awsregion = getInput('aws-region');
+  console.log(`aws-region ${nameToGreet}!`);
+  const accesskey = getInput('aws-region');
+  console.log(`aws-access-key ${accesskey}!`);
+  const secretaccesskey = getInput('aws-region');
+  console.log(`aws-secret-access-key ${secretaccesskey}!`);
+} 
+catch (error) {
   setFailed(error.message);
 } 

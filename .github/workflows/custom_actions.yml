@@ -3,7 +3,6 @@ name: Custom Actions Example
 on:
   push:
     branches: [ master ]
-  workflow_call:
 
 jobs:
   hello_world_job:
