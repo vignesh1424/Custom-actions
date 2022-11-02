@@ -5,6 +5,15 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  aws-region:  # id of input
+    description: 'region'
+    required: true
+  aws-access-key-id:  # id of input
+    description: 'access-key'
+    required: true
+  aws-secret-access-key:  # id of input
+    description: 'secret access key'
+    required: true
 outputs:
   time: # id of output
     description: 'The time we greeted you'
