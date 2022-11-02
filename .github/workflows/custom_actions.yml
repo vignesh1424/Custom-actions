@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  hello_world_job:
+  custom_actions:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:

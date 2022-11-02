@@ -1,7 +1,6 @@
 import { getInput, setOutput, setFailed } from '@actions/core';
 
 try {
-  // `who-to-greet` input defined in action metadata file
   const nameToGreet = getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const awsregion = getInput('aws-region');
