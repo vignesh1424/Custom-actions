@@ -15,7 +15,6 @@ jobs:
         uses: vignesh1424/Custom-actions@master
         id: hello
         with:
-          who-to-greet: 'Vignesh'
-
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          aws-region: ${{secrets.AWS_REGION}}
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
