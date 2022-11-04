@@ -1,5 +1,7 @@
 import { getInput, setOutput, setFailed } from '@actions/core';
 
+import * as dotenv from "dotenv";
+dotenv.config()
 try {
   const nameToGreet = getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
@@ -10,7 +12,7 @@ try {
   const secretaccesskey = getInput('aws-region');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
-    // console.log(process.env.AWS-REGION)
+    console.log(process.env.AWS_REGION)
 
 } 
 catch (error) {
