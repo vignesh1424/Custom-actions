@@ -9,6 +9,9 @@ try {
   console.log(`aws-access-key ${accesskey}!`);
   const secretaccesskey = getInput('aws-region');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
+  if(true){
+    console.log(process.env.AWS-REGION)
+  }
 } 
 catch (error) {
   setFailed(error.message);
