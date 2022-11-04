@@ -1,5 +1,4 @@
 import { getInput, setOutput, setFailed } from '@actions/core';
-
 import * as dotenv from "dotenv";
 dotenv.config()
 try {
@@ -12,7 +11,7 @@ try {
   const secretaccesskey = getInput('aws-region');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
-    console.log(process.env.AWS_REGION)
+  console.log(process.env.AWS_REGION)
 
 } 
 catch (error) {
