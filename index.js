@@ -12,7 +12,9 @@ try {
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
   console.log(process.env.AWS_REGION)
- 
+ if(process.env.AWS_REGION === "ap-south-1"){
+  console.log("Statement true")
+ }
 } 
 catch (error) {
   setFailed(error.message);
