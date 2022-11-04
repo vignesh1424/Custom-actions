@@ -6,13 +6,13 @@ try {
   console.log(`Hello ${nameToGreet}!`);
   const awsregion = getInput('aws-region');
   console.log(`aws-region ${awsregion}!`);
-  const accesskey = getInput('aws-region');
+  const accesskey = getInput('aws-access-key');
   console.log(`aws-access-key ${accesskey}!`);
-  const secretaccesskey = getInput('aws-region');
+  const secretaccesskey = getInput('aws-secret-access-key');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
   console.log(process.env.AWS_REGION)
- if(process.env.AWS_REGION === "ap-south-1"){
+  if(process.env.AWS_REGION === "ap-south-1"){
   console.log("Statement true")
  }
 } 
