@@ -6,7 +6,7 @@ try {
   console.log(`Hello ${nameToGreet}!`);
   const awsregion = getInput('aws-region');
   console.log(`aws-region ${awsregion}!`);
-  const accesskey = getInput('aws-access-key');
+  const accesskey = getInput('aws-access-key-id');
   console.log(`aws-access-key ${accesskey}!`);
   const secretaccesskey = getInput('aws-secret-access-key');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
