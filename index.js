@@ -12,7 +12,7 @@ try {
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
   console.log(process.env.AWS_REGION)
-
+ 
 } 
 catch (error) {
   setFailed(error.message);
