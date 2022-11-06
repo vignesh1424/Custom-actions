@@ -1,4 +1,4 @@
-import { getInput, setOutput, setFailed } from '@actions/core';
+import { getInput, setOutput, setFailed, core } from '@actions/core';
 import * as dotenv from "dotenv";
 dotenv.config()
 try {
