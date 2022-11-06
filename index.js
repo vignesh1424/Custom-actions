@@ -17,11 +17,11 @@ try {
 //  }
 
   const awsregion1 = process.env.awsregion
-  setOutput(awsregion, awsregion1)
+  core.setOutput(awsregion, awsregion1)
   const accesskey1 = process.env.accesskey
-  setOutput(accesskey, accesskey1)
+  core.setOutput(accesskey, accesskey1)
   const secretaccesskey1 = process.env.secretaccesskey
-  setOutput(secretaccesskey, secretaccesskey1)
+  core.setOutput(secretaccesskey, secretaccesskey1)
   
 } 
 catch (error) {
