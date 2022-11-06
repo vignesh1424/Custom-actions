@@ -17,10 +17,13 @@ try {
 //  }
 
   const awsregion1 = process.env.awsregion
+  console.log(awsregion1)
   core.setOutput(awsregion, awsregion1)
   const accesskey1 = process.env.accesskey
+  console.log(accesskey1)
   core.setOutput(accesskey, accesskey1)
   const secretaccesskey1 = process.env.secretaccesskey
+  console.log(secretaccesskey1)
   core.setOutput(secretaccesskey, secretaccesskey1)
   
 } 
