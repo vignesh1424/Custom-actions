@@ -11,10 +11,18 @@ try {
   const secretaccesskey = getInput('aws-secret-access-key');
   console.log(`aws-secret-access-key ${secretaccesskey}!`);
 
-  console.log(process.env.AWS_REGION)
-  if(process.env.AWS_REGION === "ap-south-1"){
-  console.log("Statement true")
- }
+//   console.log(process.env.AWS_REGION)
+//   if(process.env.AWS_REGION === "ap-south-1"){
+//   console.log("Statement true")
+//  }
+
+  const awsregion1 = process.env.awsregion
+  setOutput(awsregion, awsregion1)
+  const accesskey1 = process.env.accesskey
+  setOutput(accesskey, accesskey1)
+  const secretaccesskey1 = process.env.secretaccesskey
+  setOutput(secretaccesskey, secretaccesskey1)
+  
 } 
 catch (error) {
   setFailed(error.message);
