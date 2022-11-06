@@ -16,13 +16,13 @@ try {
 //   console.log("Statement true")
 //  }
 
-  const awsregion1 = process.env.awsregion
+  const awsregion1 = process.env[awsregion]
   console.log(awsregion1)
   setOutput(awsregion, awsregion1)
-  const accesskey1 = process.env.accesskey
+  const accesskey1 = process.env[accesskey]
   console.log(accesskey1)
   setOutput(accesskey, accesskey1)
-  const secretaccesskey1 = process.env.secretaccesskey
+  const secretaccesskey1 = process.env[secretaccesskey]
   console.log(secretaccesskey1)
   setOutput(secretaccesskey, secretaccesskey1)
   
